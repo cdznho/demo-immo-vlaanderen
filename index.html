@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vastgoedkantoor Antwerpen dat meer waardebepalingen aanvraagt | Conversiegerichte website</title>
-  <meta name="description" content="Een immosite met lokale marktkennis, pandpresentatie en een waardebepalingsflow die verkopers vertrouwen geeft. SEO-structuur, bewijs, mobiele CTA en aanvraagflow voor Antwerpen, Gent, Brugge, Leuven en kustgemeenten.">
+  <title>Vastgoedkantoor Antwerpen voor verkoop, verhuur en waardebepaling | Immo / vastgoedkantoor in Vlaanderen</title>
+  <meta name="description" content="Havenstad Vastgoed begeleidt verkoop, verhuur en waardebepaling met lokale marktkennis en persoonlijke opvolging. Diensten, realisaties, werkwijze en offerte-aanvraag voor Antwerpen, Gent, Brugge, Leuven en kustgemeenten.">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Vastgoedkantoor Antwerpen dat meer waardebepalingen aanvraagt">
-  <meta property="og:description" content="Een immosite met lokale marktkennis, pandpresentatie en een waardebepalingsflow die verkopers vertrouwen geeft.">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Vastgoedkantoor Antwerpen dat meer waardebepalingen aanvraagt", "areaServed": "Antwerpen, Gent, Brugge, Leuven en kustgemeenten", "address": {"@type": "PostalAddress", "addressLocality": "Antwerpen", "addressCountry": "BE"}, "telephone": "+32 3 000 00 00", "url": "https://cdznho.github.io/demo-immo-vlaanderen/", "description": "Een immosite met lokale marktkennis, pandpresentatie en een waardebepalingsflow die verkopers vertrouwen geeft.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Immo / vastgoedkantoor", "itemListElement": [{"@type": "Offer", "name": "Waardebepaling"}, {"@type": "Offer", "name": "Verkoopbegeleiding"}, {"@type": "Offer", "name": "Verhuur"}, {"@type": "Offer", "name": "Investeringsadvies"}]}}</script>
+  <meta property="og:title" content="Vastgoedkantoor Antwerpen voor verkoop, verhuur en waardebepaling">
+  <meta property="og:description" content="Havenstad Vastgoed begeleidt verkoop, verhuur en waardebepaling met lokale marktkennis en persoonlijke opvolging.">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Vastgoedkantoor Antwerpen voor verkoop, verhuur en waardebepaling", "areaServed": "Antwerpen, Gent, Brugge, Leuven en kustgemeenten", "address": {"@type": "PostalAddress", "addressLocality": "Antwerpen", "addressCountry": "BE"}, "telephone": "+32 3 000 00 00", "url": "https://cdznho.github.io/demo-immo-vlaanderen/", "description": "Havenstad Vastgoed begeleidt verkoop, verhuur en waardebepaling met lokale marktkennis en persoonlijke opvolging.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Immo / vastgoedkantoor", "itemListElement": [{"@type": "Offer", "name": "Waardebepaling"}, {"@type": "Offer", "name": "Verkoopbegeleiding"}, {"@type": "Offer", "name": "Verhuur"}, {"@type": "Offer", "name": "Investeringsadvies"}]}}</script>
   <style>
     :root {
       --ink: #171717;
@@ -39,6 +39,7 @@
     .proof-strip strong { display:block; font-family:var(--font-display); font-size:34px; letter-spacing:-.02em; }
     .proof-strip span { color:var(--muted); font-size:13px; line-height:1.4; }
     .site-visual { background:#111814; color:white; border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:18px; box-shadow:0 28px 80px rgba(17,24,20,.28); }
+    .hero-photo { width:100%; aspect-ratio:16/9; display:block; object-fit:cover; border-radius:6px; margin-bottom:14px; filter:saturate(.92) contrast(1.03); }
     .browser-bar { display:flex; gap:6px; padding-bottom:14px; }
     .browser-bar i { width:10px; height:10px; border-radius:50%; background:#f4c86a; }
     .browser-bar i:first-child { background:#e86f5d; }
@@ -63,12 +64,12 @@
     .service-card { min-height:230px; padding:24px; border:1px solid var(--line); border-radius:8px; background:linear-gradient(180deg,#fff,var(--soft)); }
     .service-card span { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); font-weight:700; }
     .service-card h3 { font-family:var(--font-display); font-size:25px; line-height:1.1; margin:42px 0 12px; letter-spacing:-.01em; }
-    .audit { display:grid; grid-template-columns:minmax(0,.85fr) minmax(320px,1.15fr); gap:32px; align-items:center; background:var(--ink); color:white; }
-    .audit .section-head p { color:rgba(255,255,255,.72); }
+    .projects { display:grid; grid-template-columns:minmax(0,.85fr) minmax(320px,1.15fr); gap:32px; align-items:center; background:var(--ink); color:white; }
+    .projects .section-head p { color:rgba(255,255,255,.72); }
     .score-dial { width:220px; height:220px; display:grid; place-items:center; border-radius:50%; background:conic-gradient(var(--accent) calc(var(--score)*1%), rgba(255,255,255,.12) 0); margin:0 auto; }
     .score-dial strong { width:154px; height:154px; display:grid; place-items:center; border-radius:50%; background:var(--ink); font-family:var(--font-display); font-size:54px; }
-    .audit-list { display:grid; gap:12px; }
-    .audit-list li { list-style:none; padding:18px; border:1px solid rgba(255,255,255,.14); border-radius:8px; background:rgba(255,255,255,.05); }
+    .project-list { display:grid; gap:12px; }
+    .project-list li { list-style:none; padding:18px; border:1px solid rgba(255,255,255,.14); border-radius:8px; background:rgba(255,255,255,.05); }
     .estimator { background:var(--soft); }
     .estimator-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.8fr); gap:28px; align-items:start; }
     .calculator { padding:24px; border:1px solid var(--line); border-radius:8px; background:white; }
@@ -94,7 +95,7 @@
     .reveal.is-visible { opacity:1; transform:translateY(0); }
     @media (prefers-reduced-motion: reduce) { * { scroll-behavior:auto!important; transition:none!important; animation:none!important; } .reveal { opacity:1; transform:none; } }
     @media (max-width: 900px) {
-      .hero, .audit, .estimator-grid, .final-cta { grid-template-columns:1fr; }
+      .hero, .projects, .estimator-grid, .final-cta { grid-template-columns:1fr; }
       .service-grid, .process-list, .proof-strip { grid-template-columns:1fr; }
       .nav-links a:not(.nav-cta) { display:none; }
       .mobile-sticky { display:flex; }
@@ -108,193 +109,194 @@
     <a class="brand" href="#top">Immo / vastgoedkantoor</a>
     <div class="nav-links">
       <a href="#diensten">Diensten</a>
-      <a href="#audit">Website-audit</a>
+      <a href="#projecten">Realisaties</a>
       <a href="#aanvraag">Aanvraag</a>
       <a class="nav-cta" href="tel:+3230000000">Boek een waardebepaling</a>
     </div>
   </nav>
   <header class="hero" id="top" data-od-id="hero">
     <div>
-      <h1>Vastgoedkantoor Antwerpen dat meer waardebepalingen aanvraagt</h1>
-      <p class="hero-copy">Een immosite met lokale marktkennis, pandpresentatie en een waardebepalingsflow die verkopers vertrouwen geeft.</p>
+      <h1>Vastgoedkantoor Antwerpen voor verkoop, verhuur en waardebepaling</h1>
+      <p class="hero-copy">Havenstad Vastgoed begeleidt verkoop, verhuur en waardebepaling met lokale marktkennis en persoonlijke opvolging.</p>
       <div class="hero-actions">
         <a class="cta" href="#aanvraag">Boek een waardebepaling</a>
-        <a class="cta ghost" href="#audit">Bekijk de website-aanpak</a>
+        <a class="cta ghost" href="#projecten">Bekijk realisaties</a>
       </div>
       <div class="proof-strip" aria-label="Bewijs">
-        <div><strong>37</strong><span>controlepunten voor vertrouwen, SEO en conversie</span></div>
-        <div><strong>4</strong><span>stappen van eerste bezoek naar aanvraag</span></div>
-        <div><strong>90</strong><span>seconden om het aanbod te begrijpen</span></div>
+        <div><strong>18</strong><span>jaar ervaring met klanten in Vlaanderen</span></div>
+        <div><strong>4</strong><span>duidelijke stappen van vraag tot oplevering</span></div>
+        <div><strong>24u</strong><span>reactie bij dringende vragen</span></div>
       </div>
     </div>
     <figure class="site-visual" aria-label="Waardebepaling zonder frictie">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Immo / vastgoedkantoor praktijkbeeld">
       <div class="browser-bar"><i></i><i></i><i></i></div>
       <div class="before-after-slider">
         <div class="site-pane before">
-          <strong>Voor</strong>
+          <strong>Voor de aanpak</strong>
           <div class="mini-line"></div><div class="mini-line short"></div>
-          <div class="mini-card">Onduidelijke diensten, weinig bewijs, verborgen contact.</div>
+          <div class="mini-card">Onvolledige informatie, losse vragen en onduidelijke prioriteit.</div>
           <div class="mini-line"></div><div class="mini-line"></div><div class="mini-line short"></div>
         </div>
         <div class="site-pane after" id="afterPane">
-          <strong>Na</strong>
-          <div class="mini-card"><strong>Waardebepaling zonder frictie</strong><br>Heldere route naar de juiste aanvraag.</div>
+          <strong>Na de aanpak</strong>
+          <div class="mini-card"><strong>Waardebepaling zonder frictie</strong><br>Correct voorbereid, helder opgevolgd en klaar voor de volgende stap.</div>
           <div class="mini-line"></div>
-          <div class="mini-card">Schuif van generiek aanbod naar een verkopersgerichte waardebepalingsflow.</div>
+          <div class="mini-card">Geef adres, pandtype en timing door voor een gerichte waardebepaling.</div>
         </div>
-        <input class="slider-control" id="comparisonSlider" type="range" min="28" max="82" value="58" aria-label="Vergelijk voor en na">
+        <input class="slider-control" id="comparisonSlider" type="range" min="28" max="82" value="58" aria-label="Vergelijk ruwe vraag met duidelijke aanpak">
       </div>
     </figure>
   </header>
   <main>
-    <section class="services" id="diensten" data-od-id="seo-services">
+    <section class="services" id="diensten" data-od-id="services">
       <div class="section-head reveal">
-        <h2>Immo / vastgoedkantoor met pagina's die Google en klanten begrijpen</h2>
-        <p>Voor vastgoedkantoren die meer eigenaars willen spreken voor ze op portalen verschijnen. De structuur koppelt lokale zoekintentie aan bewijs, proces en een concrete aanvraag.</p>
+        <h2>Immo / vastgoedkantoor met duidelijke diensten en opvolging</h2>
+        <p>Lokale marktkennis voor eigenaars die hun volgende stap goed willen zetten. U krijgt uitleg in mensentaal, heldere afspraken en opvolging die op papier staat.</p>
       </div>
       <div class="service-grid">
         
         <article class="service-card reveal">
           <span>01</span>
           <h3>Waardebepaling</h3>
-          <p>Meer kwalitatieve verkopersleads</p>
+          <p>Realistische waardebepaling</p>
         </article>
         
 
         <article class="service-card reveal">
           <span>02</span>
           <h3>Verkoopbegeleiding</h3>
-          <p>Sterker lokaal bewijs</p>
+          <p>Sterke presentatie van uw pand</p>
         </article>
         
 
         <article class="service-card reveal">
           <span>03</span>
           <h3>Verhuur</h3>
-          <p>Meer vertrouwen voor eerste huisbezoek</p>
+          <p>Persoonlijke opvolging tot akte</p>
         </article>
         
 
         <article class="service-card reveal">
           <span>04</span>
           <h3>Investeringsadvies</h3>
-          <p>Meer kwalitatieve verkopersleads</p>
+          <p>Realistische waardebepaling</p>
         </article>
         
       </div>
     </section>
-    <section class="audit" id="audit" data-od-id="website-audit">
+    <section class="projects" id="projecten" data-od-id="projects">
       <div class="section-head reveal">
-        <h2>Een website-audit die zichtbaar maakt waarom bezoekers afhaken</h2>
-        <p>De score kijkt niet alleen naar mooi design, maar naar vindbaarheid, mobiele helderheid, contactfrictie en vertrouwen boven de vouw.</p>
+        <h2>Recente verkopen, verhuren en waardebepalingen</h2>
+        <p>Eigenaars krijgen lokale marktkennis, realistische prijszetting en persoonlijke opvolging.</p>
       </div>
       <div>
-        <div class="score-dial" style="--score:84"><strong data-count="84">0</strong></div>
-        <ul class="audit-list">
-          <li><strong>SEO-basis:</strong> unieke titel, meta description, diensten en lokale context.</li>
-          <li><strong>Conversie:</strong> duidelijke telefoonknop, offerteflow en FAQ voor bezwaren.</li>
-          <li><strong>Vertrouwen:</strong> bewijs, werkwijze en taal die past bij Vlaamse klanten.</li>
+        <div class="score-dial" style="--score:92"><strong>4.8</strong></div>
+        <ul class="project-list">
+          <li><strong>Antwerpen:</strong> appartement gewaardeerd met vergelijking van recente verkopen.</li>
+<li><strong>Brugge:</strong> gezinswoning gepresenteerd met professionele foto&#x27;s en doelgroepkeuze.</li>
+<li><strong>Leuven:</strong> verhuurdossier opgevolgd van kandidaatselectie tot contract.</li>
         </ul>
       </div>
     </section>
-    <section class="estimator" id="aanvraag" data-od-id="request-estimator">
+    <section class="estimator" id="aanvraag" data-od-id="quote-estimator">
       <div class="section-head reveal">
-        <h2>Interactieve aanvraag die betere leads oplevert</h2>
-        <p>Laat bezoekers hun situatie inschatten. Het resultaat is geen loze gimmick: het gesprek start met context.</p>
+        <h2>Vraag een waardebepaling aan</h2>
+        <p>Adres, pandtype en timing geven snel richting aan een realistische waardebepaling.</p>
       </div>
       <div class="estimator-grid">
-        <form class="calculator" id="requestEstimator">
-          <label for="urgency">Urgentie</label>
+        <form class="calculator" id="quoteEstimator">
+          <label for="urgency">Timing</label>
           <input id="urgency" name="urgency" type="range" min="1" max="5" value="3">
-          <label for="scope">Projectgrootte</label>
+          <label for="scope">Pandtype</label>
           <input id="scope" name="scope" type="range" min="1" max="5" value="4">
-          <label for="proof">Nood aan bewijs</label>
+          <label for="proof">Documenten</label>
           <input id="proof" name="proof" type="range" min="1" max="5" value="3">
         </form>
         <aside class="estimate-result">
-          <span>Leadkwaliteit</span>
+          <span>Eerste prioriteit</span>
           <strong id="estimateScore">72</strong>
-          <p id="estimateText">Sterke aanvraag: contacteer binnen de werkdag en vraag gericht naar timing en bewijs.</p>
+          <p id="estimateText">Plan een huisbezoek met basisdocumenten en eventuele renovatieinfo.</p>
           <a class="cta" href="mailto:info@example.be">Boek een waardebepaling</a>
         </aside>
       </div>
     </section>
     <section class="process" data-od-id="process">
       <div class="section-head reveal">
-        <h2>Van eerste bezoek naar vertrouwen in vier stappen</h2>
-        <p>Een goede website verkoopt niet harder. Ze maakt de juiste volgende stap vanzelfsprekend.</p>
+        <h2>Zo verloopt een samenwerking</h2>
+        <p>Geen verrassingen: we werken met duidelijke stappen, vaste communicatie en opvolging tot alles afgerond is.</p>
       </div>
       <ol class="process-list">
         
         <li class="process-step reveal">
           <strong>Adres en type pand</strong>
-          <p>Adres en type pand wordt vertaald naar duidelijke microcopy, bewijs en een concrete volgende stap.</p>
+          <p>In deze fase maken we afspraken helder, bevestigen we de timing en zorgen we dat u weet wat de volgende stap is.</p>
         </li>
         
 
         <li class="process-step reveal">
           <strong>Lokale vergelijking</strong>
-          <p>Lokale vergelijking wordt vertaald naar duidelijke microcopy, bewijs en een concrete volgende stap.</p>
+          <p>In deze fase maken we afspraken helder, bevestigen we de timing en zorgen we dat u weet wat de volgende stap is.</p>
         </li>
         
 
         <li class="process-step reveal">
           <strong>Huisbezoek</strong>
-          <p>Huisbezoek wordt vertaald naar duidelijke microcopy, bewijs en een concrete volgende stap.</p>
+          <p>In deze fase maken we afspraken helder, bevestigen we de timing en zorgen we dat u weet wat de volgende stap is.</p>
         </li>
         
 
         <li class="process-step reveal">
           <strong>Verkoopplan</strong>
-          <p>Verkoopplan wordt vertaald naar duidelijke microcopy, bewijs en een concrete volgende stap.</p>
+          <p>In deze fase maken we afspraken helder, bevestigen we de timing en zorgen we dat u weet wat de volgende stap is.</p>
         </li>
         
       </ol>
     </section>
     <section class="faq-section" data-od-id="faq">
       <div class="section-head reveal">
-        <h2>Vragen die twijfelende klanten eerst beantwoord willen zien</h2>
-        <p>FAQ's zijn geen opvulling. Ze halen bezwaren weg net voor de contactknop.</p>
+        <h2>Veelgestelde vragen</h2>
+        <p>Antwoorden op de vragen die klanten meestal stellen voor ze een plaatsbezoek plannen.</p>
       </div>
       
         <div class="faq-item">
           <button class="faq-toggle" type="button" aria-expanded="false">
-            <span>Is dit voor kopers of verkopers?</span>
+            <span>Kan ik gratis een waardebepaling vragen?</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <p>De primaire flow richt zich op verkopers, omdat die commercieel het meest waardevol zijn.</p>
+          <p>Ja. We bekijken ligging, staat, vergelijkbare verkopen en timing.</p>
         </div>
         
 
         <div class="faq-item">
           <button class="faq-toggle" type="button" aria-expanded="false">
-            <span>Kan pandaanbod geïntegreerd worden?</span>
+            <span>Begeleiden jullie ook verhuur?</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <p>Ja. Aanbod kan later via feed of handmatige selectie worden toegevoegd.</p>
+          <p>Ja. We helpen bij prijszetting, kandidaatselectie en contractuele opvolging.</p>
         </div>
         
 
         <div class="faq-item">
           <button class="faq-toggle" type="button" aria-expanded="false">
-            <span>Waarom lokale marktcopy?</span>
+            <span>Hoe presenteren jullie mijn pand?</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <p>Verkopers willen zien dat het kantoor hun buurt begrijpt.</p>
+          <p>Met professionele foto&#x27;s, sterke tekst, doelgroepkeuze en opvolging van kandidaten.</p>
         </div>
         
 
         <div class="faq-item">
           <button class="faq-toggle" type="button" aria-expanded="false">
-            <span>Wat doet de estimator?</span>
+            <span>Werken jullie lokaal?</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
-          <p>Hij verzamelt pandtype, regio en timing voor een betere waardebepalingsaanvraag.</p>
+          <p>Ja. We kennen buurten, prijsvorken en kopersverwachtingen in Antwerpen en omgeving.</p>
         </div>
         
     </section>
     <section class="final-cta" data-od-id="final-cta">
-      <h2>Maak van uw website een eerste verkoopgesprek.</h2>
+      <h2>Een vraag over uw project? We bekijken het graag.</h2>
       <a class="cta" href="mailto:info@example.be">Boek een waardebepaling</a>
     </section>
   </main>
@@ -314,19 +316,24 @@
       });
     });
 
-    const estimator = document.getElementById('requestEstimator');
+    const estimator = document.getElementById('quoteEstimator');
     const estimateScore = document.getElementById('estimateScore');
     const estimateText = document.getElementById('estimateText');
+    const quoteTexts = {
+      low: "Oriënterende waardevraag: geef adres, type pand en gewenste timing door.",
+      mid: "Plan een huisbezoek met basisdocumenten en eventuele renovatieinfo.",
+      high: "Snelle verkoop of verhuur gewenst: vraag meteen een waardebepaling aan."
+    };
     function updateEstimate() {
       if (!estimator) return;
       const values = [...estimator.querySelectorAll('input')].map(input => Number(input.value));
       const score = 42 + values.reduce((sum, value) => sum + value, 0) * 4;
       estimateScore.textContent = String(score);
       estimateText.textContent = score > 88
-        ? 'Topaanvraag: bel snel, vraag concrete timing en verwijs naar relevant bewijs.'
+        ? quoteTexts.high
         : score > 68
-          ? 'Sterke aanvraag: contacteer binnen de werkdag en vraag gericht naar timing en bewijs.'
-          : 'Oriënterende lead: stuur een duidelijke vervolgvraag en toon een vergelijkbare case.';
+          ? quoteTexts.mid
+          : quoteTexts.low;
     }
     estimator?.addEventListener('input', updateEstimate);
     updateEstimate();
